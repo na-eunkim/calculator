@@ -56,6 +56,7 @@ Item peek(Stack *stack)
 
 void stack_overflow(void)
 {
+	printf("Modified by 202413054 김나은\n");
 	printf("Expression is too complex\n");
 	exit(EXIT_FAILURE);
 }
@@ -73,4 +74,5 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
+
 
